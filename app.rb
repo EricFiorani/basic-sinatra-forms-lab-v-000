@@ -14,8 +14,8 @@ class App < Sinatra::Base
     @power_forward = params[:pf]
     @small_forward = params[:sf]
     @center = params[:c]
-    "#{@team_name} #{@coach} #{@team_name} #{@team_name}
-    #{@team_name} #{@team_name} #{@team_name} #{@team_name}"
+    "#{@team_name} #{@coach} #{@point_guard} #{@shooting_guard}
+    #{@power_forward} #{@small_forward} #{@Center}"
     erb :team
   end
 end
